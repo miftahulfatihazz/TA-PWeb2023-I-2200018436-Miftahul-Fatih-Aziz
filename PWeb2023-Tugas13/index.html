@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Ayu Kost</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Selamat datang di Website Ayu Kost</h1><br>
+    <h2>Paket Kost yang Tersedia</h2>
+    <div id="packages"></div>
+    <div class="paket">
+       <strong> PAKET A (Kipas Angin, Kasur, Kamar Mandi) Rp. 500.000/bulan</strong><br>
+       <strong> PAKET B (AC, Springbed, Kamar Mandi) Rp. 950.000/bulan</strong><br>
+        <strong>PAKET C (AC, Springbed, TV, Lemari, Kamar Mandi) Rp. 1.500.000/bulan<strong<br>
+    </div>
+
+    <h2>Booking Kost</h2>
+    <form action="booking.php" method="post" onsubmit="return validateForm()">
+        <label for="name">Nama</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="package">Paket</label><br>
+        <select id="package" name="package" required>
+            <option value="">Pilih Paket</option>
+            <option value="Paket A">Paket A</option>
+            <option value="Paket B">Paket B</option>
+            <option value="Paket C">Paket C</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
